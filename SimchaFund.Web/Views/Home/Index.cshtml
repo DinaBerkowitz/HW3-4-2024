@@ -1,0 +1,33 @@
+﻿
+
+@using SimchaFund.Data
+@model SimchaViewModel
+
+<div class="header">
+    <h1>Simchas</h1>
+</div>
+<div class="row header">
+    <div class="col-md-4">
+        <button class="btn btn btn-danger" id="new-simcha">New Simcha</button>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Contributions</th>
+            <th>Simcha Name</th>
+            <th>Contributor Count</th>
+            <th>Total</th>
+            <th>Date</th>
+        </tr>
+        <tbody>
+            <tr>
+            @foreach(Simcha s in Model.simchas)
+            {
+            <td><button class="btn btn-primary">Contributions</button></td>
+            }
+            </tr>
+        </tbody>
+        </table>
+        </div>
+

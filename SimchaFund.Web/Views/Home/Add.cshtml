@@ -1,0 +1,46 @@
+﻿
+
+
+
+
+<div class="modal-fade" id="add-contributer"tabindex="-1">
+    <div class="modal-dialog">
+        <form method="post" action="/home/added">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="add-contributer">Add Contributer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Add Contributer</h1>
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname" />
+                    <br />
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastname" />
+                    <br />
+                    <label>Cell Number</label>
+                    <input type="text" class="form-control" placeholder="Cell Number" name="cellnumber" />
+                    <br />
+                    <label>Initial Deposit</label>
+                    <input type="text" class="form-control" placeholder="Intital Deposit" name="initialdeposit" />
+                    <br />
+                    <label>Date</label>
+                    <input type="date" class="form-control" placeholder="Date Created" name="datecreated" />
+                    <br />
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="alwaysInclude">
+                        <label class="form-check-label" for="flexCheckDefault">
+                           Always Include
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Add Contributer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

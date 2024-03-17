@@ -1,0 +1,59 @@
+﻿
+@using SimchaFund.Data
+@model ContributersViewModel
+
+
+@* <a href="/home/add" class="btn btn-danger" id="show-modal">Add Contributer</a> *@
+<button class="btn btn-danger" id="show-modal">Add Contributer</button>
+
+
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Deposit</th>
+            <th>Name</th>
+            <th>Cell</th>
+            <th>Balance</th>
+            <th>Date Created</th>
+            <th>Always Include</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Contributer c in Model.contributers)
+        {
+            <tr>
+                <td><button  class="btn btn-success">Deposit</button></td>
+                <td>@c.FirstName @c.LastName</td>
+                <td>@c.CellNumber</td>
+                <td>Balance</td>
+                <td>@c.DateCreated</td>
+                <td>
+               @*      @if (c.AlwaysInclude)
+                    {
+                        @* <td> *@<i class="bi bi-check-lg"></i>@* </td> *@
+                    }
+                  @*   else
+                    {
+                        <td></td>
+                    } *@
+                </td> *@
+                    <td>
+                        <button class="btn btn-primary">Show History</button>
+                    <button class="btn btn-danger">Edit</button>
+                    </td>
+               
+            </tr>
+            
+        }
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
